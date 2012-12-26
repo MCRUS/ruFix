@@ -1,0 +1,9 @@
+name: ruFix
+main: me.repeat.ruFix.ruFix
+version: 1.0
+author: repeat, toxuin, Alex_Bond
+description: BugFix for Russian chat
+
+commands:
+  rufixreload:
+    description: reloads config
