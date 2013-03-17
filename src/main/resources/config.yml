@@ -1,7 +1,14 @@
+# Исправлять ли сообщения о сметри?
+DeathMessages: true
+# Если ты хочешь указать только операционную систему , то выставь тут false и укажи OS
+Advanced: false
+# Возможные варианты: Linux и Windows
+OS: Linux
 Tables:
 - ru
+# Далее параметры которые нужны только при включенном Advanced режиме.
 Debug: false
 LogFile: UTF-8
 Console: UTF-8
-ParseConsole: false
+ParseConsole: true
 ParseLogFile: true

@@ -22,6 +22,7 @@ public class PlayerDeath implements Listener {
 
     @EventHandler
     public void death(PlayerDeathEvent e) {
+        String before = e.getDeathMessage();
         Player p = e.getEntity();
         EntityDamageEvent damageEvent = p.getLastDamageCause();
         if (damageEvent instanceof EntityDamageByEntityEvent) {
@@ -79,7 +80,8 @@ public class PlayerDeath implements Listener {
                 e.setDeathMessage("%killed% был убит Скелетом-иссушителем");
             }
         }
-        e.setDeathMessage(plugin.fixUseTable(e.getDeathMessage().replace("%killed%", p.getName())));
+        if (!before.equals(e.getDeathMessage()))
+            e.setDeathMessage(ruFix.fixUseTable(e.getDeathMessage().replace("%killed%", p.getName())));
 
     }
 }

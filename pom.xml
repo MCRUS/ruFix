@@ -4,9 +4,9 @@
     <groupId>me.repeat</groupId>
     <artifactId>ruFix</artifactId>
     <packaging>jar</packaging>
-    <version>1.0</version>
+    <version>1.1</version>
     <name>ruFix</name>
-    <url>http://rubukkit.org</url>
+    <url>http://mctalk.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,7 +23,7 @@
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.4.6-R0.2-SNAPSHOT</version>
+            <version>1.5-R0.1-SNAPSHOT</version>
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
