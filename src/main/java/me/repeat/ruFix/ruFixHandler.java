@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 public class ruFixHandler {
     public static void handlerChange() throws Exception {
 
-        Logger globalLogger = ruFix.plugin.getLogger();
+        Logger globalLogger = Logger.getLogger("Minecraft");
         Handler[] handlers = globalLogger.getParent().getHandlers();
         if (handlers.length == 0)
             throw new Exception("Can't inject to console or log handler. No handlers found!");
